@@ -5,7 +5,7 @@ const sendEmail = require('../../utils/sendEmail');
 exports.registerAdmin = async (req, res) => {
   const { name, email, password } = req.body;
 
-  console.log('Request Body:', req.body); // Log the incoming request body
+  console.log('Request Body:', req.body); 
 
   if (!name || !email || !password) {
     return res.status(400).json({ message: 'Please provide all required fields' });

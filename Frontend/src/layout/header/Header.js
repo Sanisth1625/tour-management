@@ -77,7 +77,7 @@ const Navbar = () => {
           <Button color="inherit" component={Link} to="/aboutus">About</Button>
           {isAuthenticated && !isAdmin && !isOwner && (
             <>
-              <Button color="inherit" component={Link} to={`/booked-tickets/${user?._id}`}>Bookings</Button>
+              {/* //<Button color="inherit" component={Link} to={`/booked-tickets/${user?._id}`}>Bookings</Button> */}
               <Button color="inherit" component={Link} to="/destinationuser">Destinations</Button>
               <Button color="inherit" component={Link} to="/vehicleuser">Vehicles</Button>
               <Button color="inherit" component={Link} to="/hotellistuser">Hotels</Button>
@@ -151,8 +151,10 @@ const Navbar = () => {
             <>
               <Button
                 color="inherit"
+        
                 onClick={handleMenuClick}
                 endIcon={<ArrowDropDown />}
+             
               >
                 Login
               </Button>

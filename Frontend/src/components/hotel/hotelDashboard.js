@@ -4,7 +4,7 @@ import { styled } from '@mui/material/styles';
 
 const categories = [
   { title: 'Add Hotels', link: '/hotel/add', image: '/addHotel.jpg' },
-  { title: 'View Hotels', link: '/hotel/view', image: '/ViewHotel.jpg' },
+  // { title: 'View Hotels', link: '/hotel/view', image: '/ViewHotel.jpg' },
 ];
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

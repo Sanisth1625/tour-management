@@ -8,7 +8,7 @@ const userSchema = new mongoose.Schema({
   address: { type: String, required: true },
   country: { type: String, required: true },
   gender: { type: String, required: true },
-  role: { type: String, default: 'user' },
+  role: { type: String, default: 'admin' },
   profilePicture: { type: String }  // Field for base64 profile picture
 });
 
